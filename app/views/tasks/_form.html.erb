@@ -9,5 +9,12 @@
   <%= f.text_field :details %>
   </div>
 
+<div class='form-checkbox'>
+ <%= f.check_box(:completed) %>
+     <%= f.label(:completed) %>
+</div>
+
+
+
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>

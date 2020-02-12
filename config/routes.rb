@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  # or use the resources helper from Rails can be passed with exceptions like except: [:delete]
   get 'tasks/new', to: 'tasks#new', as: :new
   patch 'tasks/:id', to: 'tasks#update', as: :update
   get 'tasks/:id/edit', to: 'tasks#edit', as: :edit
+
 
   get 'tasks/:id', to: 'tasks#show', as: :task
 

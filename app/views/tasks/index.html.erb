@@ -1,6 +1,6 @@
 <h1>Tasks List</h1>
 <% @tasks.each do |t| %>
-<h2><%=t.completed ? "✅" : "🈹" %> <%= link_to t.name, task_path(t) %></h2>
+<h2><%=t.completed ? "✅" : " ⬜️" %> <%= link_to t.name, task_path(t) %></h2>
 <% end %>
 
 <%= link_to "Create a new task", new_path  %>

@@ -1,3 +1,49 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+
+
+}
+
+h2 {
+
+}
+
+
+p {
+
+}
+
+.container {
+display: block;
+text-align: center;
+padding: 20px;
+marign: 10px;
+}
+
+.column {
+  flex: grid;
+}
+
+.task-details {
+
+
+
+}
+
+.task-list {
+  flex: display;
+  list: inline;
+  list-style: none;
+
+}
+.task-links {
+
+}
+
+.form-group {
+
+
+}

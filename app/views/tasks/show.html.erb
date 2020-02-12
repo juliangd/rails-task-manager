@@ -1,14 +1,36 @@
-<h2><%= @task.name %></h2>
-<p><%= @task.details %></p>
-<p><%= @task.completed ? "✅ - task is completed" : "🈹 - task is not completed" %> </p>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="task-details">
+        <h2><%= @task.name %></h2>
+        <p><%= @task.details %></p>
+        <p><%= @task.completed ? "✅ - task is completed" : "🈹 - task is not completed" %> </p>
+      </div>
+    </div>
+  </div>
 
-<%= link_to "Delete", task_path(@task),
-      method: :delete,
-      data: { confirm: "Are you sure?" } %>
+  <div class="column">
+
+      <div class="row">
+
+      </div>
+        <ul class="task-list">
+          <li>
+          <%= link_to "Delete", task_path(@task),
+          method: :delete,
+          data: { confirm: "Are you sure?" } %>
+          </li>
+          <li><%= link_to "Edit task", edit_path%></li>
+          <li><%= link_to "Back to list", tasks_path%></li>
+          <li><%= link_to "Create a new task", new_path%></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
-      <%= link_to "Edit task", edit_path  %>
-
-<p><%= link_to "Back to list", tasks_path  %></p>
-<p><%= link_to "Create a new task", new_path  %></p>
+<!-- alternative method make a submit link to mark_as_done -->
 
